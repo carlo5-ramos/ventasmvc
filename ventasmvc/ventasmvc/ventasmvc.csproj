@@ -175,6 +175,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910031529308_InitialCreate.cs" />
+    <Compile Include="Migrations\201910031529308_InitialCreate.Designer.cs">
+      <DependentUpon>201910031529308_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910031609514_AddRemarksFieldToModelProduct.cs" />
+    <Compile Include="Migrations\201910031609514_AddRemarksFieldToModelProduct.Designer.cs">
+      <DependentUpon>201910031609514_AddRemarksFieldToModelProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -239,8 +248,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\Product\Edit.cshtml" />
     <Content Include="Views\Product\Delete.cshtml" />
   </ItemGroup>
@@ -259,6 +268,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910031529308_InitialCreate.resx">
+      <DependentUpon>201910031529308_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910031609514_AddRemarksFieldToModelProduct.resx">
+      <DependentUpon>201910031609514_AddRemarksFieldToModelProduct.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,17 @@
+//para ingresar al contexto de creacion de las migraciones
+PM> enable-Migrations -ContextTypeName StoreContext
+Comprobando si el contexto indica una base de datos existente...
+Se ha detectado una base de datos creada con un inicializador de base de datos. La migración con scaffold '201910031529308_InitialCreate' corresponde a la base de datos existente. Para usar una migración automática en su lugar, elimine la carpeta Migrations y especifique el parámetro -EnableAutomaticMigrations para ejecutar de nuevo Enable-Migrations.
+Se ha habilitado Migraciones de Code First para el proyecto ventasmvc.
+
+//creacion de la migracion detallando el cambio(opcional)
+PM> Add-Migration AddRemarksFieldToModelProduct
+Aplicando técnica scaffolding a la migración 'AddRemarksFieldToModelProduct'.
+El código del diseñador de este archivo de migración incluye una instantánea del modelo actual de Code First. Esta instantánea se usa para calcular los cambios que se producirán en el modelo al aplicar la técnica scaffolding a la siguiente migración. Si realiza otros cambios en el modelo y desea incluirlos en esta migración, deberá ejecutar de nuevo 'Add-Migration AddRemarksFieldToModelProduct' para volver a aplicar la técnica scaffolding.
+
+//Actualizar base de datos para efectuar los cambios
+PM> Update-Database
+Especifique la marca '-Verbose' para ver las instrucciones SQL que se están aplicando a la base de datos de destino.
+Aplicando migraciones explícitas: [201910031609514_AddRemarksFieldToModelProduct].
+Aplicando migración explícita: 201910031609514_AddRemarksFieldToModelProduct.
+Ejecutando el método Seed.
