@@ -11,14 +11,19 @@ namespace ventasmvc.Models
         [Key]
         public int ProductID { get; set; }
 
+        [Required]
         public string Description { get; set; }
 
+        [Required]
         public decimal Price { get; set; }
 
+        [Required]
         public DateTime LastBuy { get; set; }
 
+        [Required]
         public float Stock { get; set; }
 
         public string Remarks { get; set; }
+        
     }
 }

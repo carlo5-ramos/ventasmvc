@@ -9,7 +9,8 @@ namespace ventasmvc.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             ContextKey = "ventasmvc.Context.StoreContext";
         }
 
